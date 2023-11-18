@@ -7,6 +7,11 @@
 <body>
     <form action="" method="post">
     <p>
+        {% if message %}
+    <p> {{message}}</p>
+        {% endif %}
+    </p>
+    <p>
         <label for="username">Username</label>
         <input type="text" name="username">
     </p>
